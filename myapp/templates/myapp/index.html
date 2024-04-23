@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product List</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Products</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through the products and create a table row for each -->
+            {% for product in products %}
+                <tr>
+                    <!-- Create a link to the product's detail page -->
+                    <td><a href="{% url 'show' product.id %}">{{ product.name }}</a></td>
+                    <td>{{ product.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

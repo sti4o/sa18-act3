@@ -1,0 +1,29 @@
+[
+    {
+        "model": "myapp.product",
+        "pk": 1,
+        "fields": {
+            "name": "Feta Cheese",
+            "price": 100.00,
+            "description": "This is a block of feta cheese."
+        }
+    },
+    {
+        "model": "myapp.product",
+        "pk": 2,
+        "fields": {
+            "name": "American Cheese",
+            "price": 29.99,
+            "description": "This is a block of american cheese."
+        }
+    },
+    {
+        "model": "myapp.product",
+        "pk": 3,
+        "fields": {
+            "name": "Swiss Cheese",
+            "price": 39.99,
+            "description": "This is a block of swiss cheese."
+        }
+    }
+]
